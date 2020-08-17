@@ -1,0 +1,312 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Asap', sans-serif;
+	color: #523906;
+}
+
+
+a{
+	display: inline-block;
+}
+
+section{
+	position: relative;
+}
+
+.cabecera{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/*background-color: #523906;*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 999;
+}
+
+.cabecera .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cabecera .link-logo{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cabecera .link-logo .logo{
+	width: 100px;
+	height: 80px;
+}
+
+.cabecera .menu{
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:#523906;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;*/
+	
+}
+
+.cabecera .menu a{
+	padding-left: 7.5px;
+	margin-right: 7.5px;
+	color: #f0a500;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.cabecera .hamb{
+	color: #0000ff;
+	font-size: 40px;
+	display: none;
+}
+
+.container{
+	width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.container-full{
+	width: 100%;
+	padding: 0 15px;
+}
+
+.fila{
+	margin-left: -15px;
+	margin-right: -15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.fila.fila-centrada{
+	justify-content: center;
+}
+
+.columna{
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+
+.columna-100{
+	width: 100%;
+}
+
+.columna-50{
+	width: 50%;
+}
+
+.columna-33{
+	width: 33.33%;
+}
+
+.columna-25{
+	width: 25%;
+}
+
+.orden{
+	order: 2;
+}
+
+.sin-padding{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.conteendor-cuadrado{
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+	overflow: hidden;
+	
+	cursor: pointer;
+}
+
+.conteendor-cuadrado.cont-rect{
+	
+	padding-bottom: 56.25%;
+	
+}
+
+.conteendor-cuadrado img{
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	/*opacity: 0.8;
+	filter: grayscale(1);*/
+}
+
+.conteendor-cuadrado .contenido-cuadrado{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding-right: 30px;
+	padding-left: 30px;
+	top: -100%;
+	color: #000;
+	
+}
+.conteendor-cuadrado .contenido-cuadrado h2{
+	margin: 0;
+	  	
+}
+
+.seccion{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.centrar-texto{
+	text-align: center;
+}
+
+.justificar-texto{
+	text-align: center;
+}
+
+.titulos{
+	margin-top: 0;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.margen-arriba{
+	margin-top: 40px;
+}
+
+.btn{
+	padding: 10px 30px;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 15px;
+	border-width: 2px;
+	border-style: solid;
+
+}
+
+.btn-circulo{
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	font-size: 30px;
+	border-radius:100px;
+	border-width: 2px;
+	border-style: solid;
+	text-decoration: none;
+}
+
+.btn-circulo.borde-blanco{
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn.boton-transpa{
+	background-color: transparent;
+	color: #0000ff;
+	border-color:#0000ff;
+	font-weight: bold;
+
+
+}
+
+.btn.boton-otro{
+	background-color:#0000ff;
+	color: #fff;
+	border-color:#0000ff;
+	font-weight: bold;
+}
+
+
+#banner{
+	background-color: #000;
+
+}
+#banner .banner-home{
+	width: 100%;
+	height: auto;
+	display: block;
+	opacity: 0.8;
+}
+
+#banner .container{
+	position: absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
+}
+
+#banner .container h1{
+	font-size: 70px;
+	color: #0000ff;
+	margin: 0;
+	-webkit-text-stroke: 2px white ;
+
+}
+#banner .container p{
+	font-size: 24px;
+	color: #000;
+	
+
+}
+
+#servicio{
+	background-color: #fff;
+	background-image: url("../img/grass4.svg");
+	background-position: center bottom;
+
+}
+
+#servicio .titulos{
+	color: #000;
+}
+#flores{
+
+}
+
+#flores ul{
+	padding-left: 0;
+	list-style: inside;
+	list-style-type: none;
+	list-style-image: url("../img/chek.png") ;
+	columns: 2;
+	text-align: center;
+}
+#servicios{
+
+}
+
+#servicios .contenedor-serv{
+	text-align: center;
+	background-color: #B9D942;
+	padding: 30px;
+	height: 100%;
+	border-radius: 15px;
+	box-shadow: 1px 1px 20px 0px #62760c;
+}
+
+#servicios .contenedor-serv i{
+	font-size: 40px; 
+}
